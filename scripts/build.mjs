@@ -1,3 +1,4 @@
+// scripts/ (rev 3)
 // scripts/build.mjs — render public/ into dist/ with a build stamp.
 import { mkdirSync, copyFileSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 mkdirSync("dist", { recursive: true });
