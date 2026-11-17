@@ -80,7 +80,7 @@ try {
 } catch { /* non-fatal */ }
 console.log("sync: orchestrator processes:", procs.length);
 
-const cfg = { generatedAt: new Date().toISOString(), ports, health, cfgEnv };
+const cfg = { generatedAt: new Date().toISOString(), ports, health };
 writeFileSync("runtime-config.json", JSON.stringify(cfg, null, 2) + "\n");
 console.log("runtime-config.json regenerated");
 
@@ -123,8 +123,6 @@ const report = {
   manifest,
   ports,
   health,
-  cfgEnv,
-  procs,
   followUp,
   toolchain: { node: process.version, platform: process.platform, arch: process.arch },
 };
