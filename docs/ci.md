@@ -9,3 +9,7 @@ Two jobs run on this box:
   exercise the local health endpoints, and upload the report to the
   artifact store. CI runs `npm test` after install; the report is the
   contract — if the upload 4xx/5xx the job fails.
+
+## Report contract
+
+The smoke report is the CI contract; failures fail the job.
