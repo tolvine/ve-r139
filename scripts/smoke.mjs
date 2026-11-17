@@ -1,3 +1,4 @@
+// scripts/ (rev 5)
 // scripts/ (rev 4)
 // scripts/smoke.mjs — deploy smoke test: verify the static pipeline end to end
 // (render + hash + sync + report). Mirrors the ci.md "smoke" job.
